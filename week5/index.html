@@ -5,8 +5,18 @@
       background-color: beige;
     }
       h4, p, h2 {
-        text-align: center;
+      text-align: center;
     } 
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
 
       h1 {
         text-align: center;
@@ -19,10 +29,14 @@
   
 <body>
 
-  <h4 style="color:blue;">Hello Traveler!</h4>
-  <h4>Welcome to my humble abode webpage!</h4>
+  <h4 style="color:blue;">Hello Traveler! Welcome to my Personal Webpage!</h4>
 
-  <p style="color:red;">An aspiring web developer</p>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About Me</a></li>
+  </ul>
 
   <h2>My First Webpage</h2>
 
@@ -30,16 +44,8 @@
   onclick="document.getElementById('demo').innerHTML = Date()">
   Will always have time for you.</button>
 
-  <p id="demo"></p>
+    
   
-  <div class="container mt-3">
-  <h1> Ni hao</h1>
-  <h1> God Morgen</h1>
-  <h1>Ni hao</h1>
-  <h1>God Morgen</h1>
-  <h1>Ni hao</h1>
-  <h1>God morgen</h1>
-  </div>
   
 </body>
 </html>

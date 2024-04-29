@@ -36,9 +36,15 @@
 <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
 <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
 
-<p id="demo">Welcome to my webpage.</p>
+<p id="demo"></p>
 
-<button type="button" onclick="document.getElementById('demo').style.fontSize='50px'">Pleaseee click me!</button>
+<script>
+let x = 123456789;
+document.getElementById("demo").innerHTML =
+  String(x) + "<br>" +
+  String(123456789) + "<br>" +
+  String(123,456,689 + 100);
+</script>
 
 </body>
 </html>

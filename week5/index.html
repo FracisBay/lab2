@@ -7,19 +7,10 @@
       margin: auto; 
       background-color: FF9800; 
       }
+	  
     h2 {
       text-align: center; 
-    }
-    ul {
-      list-style-type: none;
-      margin: 100;
-      padding: 100;
-    }
-
-    li {
-      display: inline;
-      
-    }
+      }
 
     #grad2 {
       margin: auto;
@@ -27,12 +18,53 @@
       height: 200px
       padding: 10px;
       text-align: center;
-    }
+      }
 	
 	body {
 	background-color:lightblue;
 	height: 1000px;
     
+    .dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+	  padding:100x;
+	  margin: 5%;
+      }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+    .dropdown:hover .dropbtn {
+       background-color: #3e8e41;
+      }
     
     
   </style>
@@ -43,19 +75,19 @@
 <body>
   <div id="grad1">
   <h4 style="color:blue;">Hello Traveler! Welcome to my Personal Webpage!</h4>
+  </div>
 
-    <div id="grad2">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">Hobbies</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="#about">About Me</a></li>
-      </ul>
+    <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Contact Me</a>
     </div>
+   </div>
 
   <h2>My First Webpage</h2>
-  </div>
-  
+
   
 </body>
 </html>

@@ -97,6 +97,13 @@
         Any other interesting aspects of your life that you would like to share: I’ve been working since 18 years old and this was the only time I had the chance to go to school. Since it was also part of my dream to get a degree after college even if its an Associate level degree<br></p>
 	 <p id="schnee"></p>
 	 <p id="keisuke"></p>
+	 
+		<div id="schnee1">
+		<p>YOLO</p>
+		<p>YOLO2</p>
+		</div>
+		
+		<p id="demo"></p>
      <script>
 	 const person = {
 	  newHobby: "cooking",
@@ -105,8 +112,14 @@
 	 
 	 document.getElementById("schnee").innerHTML = " I've got two new passions which are " + person.newHobby + 
 	 " and " + person.newHobby2; //JS Object 
+	 
+	 const x = document.getElementById("schnee1");
+     const y = x.getElementsByTagName("p");
+
+     document.getElementById("demo").innerHTML = 
+     'The first paragraph (index 105) inside "schnee" is: ' + y[0].innerHTML; // JS HTML DOM
 	 </script>
-	 <script>
+		<script>
 	  class Person = {
 	   constructor(hobby, year) {
 		this.hobby = hobby;
@@ -122,7 +135,7 @@
 	 const myHobby = new Hobby("Hiking", 2022);
 	 document.getElementById("keisuke").innerHTML = 
 	 " I started doing hiking and went to Mt. Batulao in my first hike last " + myHobby.age() + " of August. "
-	 // JS Class
-	 </script>
+	 //JS Class
+	</script>
 </body>
 </html>

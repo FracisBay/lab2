@@ -98,6 +98,7 @@
 	 <p id="schnee"></p>
 	 <p id="keisuke"></p>
 	 <p id="schnee2"></p>
+	 <p id="schnee3"></p>
 	 
 		<div id="schnee1">
 		<p>YOLO</p>
@@ -122,6 +123,21 @@
 	 
 	 document.getElementById("schnee2").innerHTML = 
      "The full URL of this page is:<br>" + window.location.href; // JS Browser DOM 
+	 
+	 function myGreeting(getsu) {
+		document.getElementById("schnee3").innerHTML = getsu; 
+	 }
+	 
+	 function myFirst() {
+		myGreeting ("This is the continuation of my webpage");
+	 }
+	 
+	 function mySecond() {
+		myGreeting ("Goodbye");
+	 }
+	 
+	 mySecond();
+	 myFirst(); // JS Callback
 	 </script>
 		<script>
 	  class Person = {

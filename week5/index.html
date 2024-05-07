@@ -96,6 +96,7 @@
 		Do you have a dream that you wish to fulfill? If yes, what is your dream? The dream I would want to fulfill is to earn some certifications from various IT platforms, to earn myself a degree of accomplishment so that I can say I’m ready to take part of becoming a full-pledged IT professional and ready to take on some challenges in the real IT industry.<br>
         Any other interesting aspects of your life that you would like to share: I’ve been working since 18 years old and this was the only time I had the chance to go to school. Since it was also part of my dream to get a degree after college even if its an Associate level degree<br></p>
 	 <p id="schnee"></p>
+	 <p id="keisuke"></p>
      <script>
 	 const person = {
 	  newHobby: "cooking",
@@ -104,6 +105,24 @@
 	 
 	 document.getElementById("schnee").innerHTML = " I've got two new passions which are " + person.newHobby + 
 	 " and " + person.newHobby2; //JS Object 
+	 </script>
+	 <script>
+	  class Person = {
+	   constructor(hobby, year) {
+		this.hobby = hobby;
+		this.year = year;
+	   
+	   }
+	   age() {
+		const date = new Date();
+		return date.getFullYear() - this.year;
+	   }
+	 }
+	 
+	 const myHobby = new Hobby("Hiking", 2022);
+	 document.getElementById("keisuke").innerHTML = 
+	 " I started doing hiking and went to Mt. Batulao in my first hike last " + myHobby.age() + " of August. "
+	 // JS Class
 	 </script>
 </body>
 </html>

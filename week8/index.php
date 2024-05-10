@@ -157,5 +157,15 @@
 	 " I started doing hiking and went to Mt. Batulao in my first hike last " + myHobby.age() + " of August. "
 	 //JS Class
 	</script>
+
+   <?php
+   $draw = "draw";
+   echo "My mom told me that I" . $draw . "since I was at the age of 5 years old" . "<br>";
+   ?> 
+   //PHP Introduction 
+
+   
+
+
 </body>
 </html>

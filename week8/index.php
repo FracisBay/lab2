@@ -180,6 +180,13 @@
 
    echo strlen("Whereee is mag burger???");
    //PHP Strings
+
+   function myMessage() {
+    echo "Hello world! My name is Francis but you can call me Kiko!";
+   }
+  
+   myMessage();
+   //PHP Functions
    ?>
 
    

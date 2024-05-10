@@ -161,8 +161,16 @@
    <?php
    $draw = "draw";
    echo "My mom told me that I" . $draw . "since I was at the age of 5 years old" . "<br>";
-   ?> 
    //PHP Introduction 
+   
+   $txt1 = "About to get started with PHP";
+   $txt2 = "W3Schools.com";
+
+   echo "<h2>" . $txt1 . "</h2>";
+   //Echo and Print
+
+   
+   ?>
 
    
 

@@ -174,10 +174,13 @@
         return __CLASS__;
       }
     }
-    $kiko = new Person();
-    echo $kiko->myValue();
-    //PHP Data Type
-    ?>
+   $kiko = new Person();
+   echo $kiko->myValue();
+   //PHP Data Type
+
+   echo strlen("Whereee is mag burger???");
+   //PHP Strings
+   ?>
 
    
 

@@ -169,8 +169,15 @@
    echo "<h2>" . $txt1 . "</h2>";
    //Echo and Print
 
-   
-   ?>
+   class Person {
+      public function myValue(){
+        return __CLASS__;
+      }
+    }
+    $kiko = new Person();
+    echo $kiko->myValue();
+    //PHP Data Type
+    ?>
 
    
 
